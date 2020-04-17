@@ -1,0 +1,32 @@
+.stat {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: white;
+    background: #009933 fixed;
+}
+
+.stat i {
+    font-size: 50px;
+}
+
+.stat-items h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFFFF;
+
+}
+
+.stat p {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.jumbotron {
+    background: #009933;
+    color: white;
+}
+
+.jumbotron h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
