@@ -4,12 +4,12 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
+import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 
 @WebServlet(name = "Covid19StatusServlet", urlPatterns = "/status")
 public class Covid19StatusServlet extends HttpServlet {
@@ -17,10 +17,10 @@ public class Covid19StatusServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         final String url = "http://covid19fund.gov.az/az/donation";
 
-        String governmentDonation = null;
-        String legalEntities = null;
-        String individualLocal = null;
-        String totalDonation = null;
+        String governmentDonation;
+        String legalEntities;
+        String individualLocal;
+        String totalDonation;
 
 
         try {
